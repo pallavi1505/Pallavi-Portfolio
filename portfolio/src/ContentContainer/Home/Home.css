@@ -1,11 +1,11 @@
 .home-container{
-    background-color: grey;
+    background-color: #4d4d52;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     height: 20%;
-    min-height: fit-content;
+    min-height: fit-content;flex-direction: column;
 }
 
 .home-parent{
@@ -31,7 +31,8 @@
 }
 
 .home-details{
-    width: 55%
+    width: 55%;
+    margin-top: 5%;
 }
 
 .icon-color{
@@ -87,14 +88,15 @@
     .home-parent{
         color: aliceblue;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-around;
         margin-top: 3%;
         margin-bottom: 1%;
     }
        
     .home-details{
-        width: 100%
+        width: 100%;
+        margin-top: 2%;
     }
 
     .profile-picture-container{
@@ -114,5 +116,15 @@
         flex-grow: 1;
         justify-content: center;
         margin-top: 5%;
+    }
+
+    .home-options{
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 500px) {
+    .home-details{
+        margin-left: 5%;
     }
 }
