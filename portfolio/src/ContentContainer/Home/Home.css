@@ -1,0 +1,118 @@
+.home-container{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 20%;
+    min-height: fit-content;
+}
+
+.home-parent{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+
+
+.highlighted-text{
+    color: #F57F17;
+    font-size: 30px;
+}
+
+.home-options{
+    margin-top: 5%;
+}
+
+.home-details{
+    width: 55%
+}
+
+.icon-color{
+    color: aliceblue;
+    margin: 10px;
+}
+
+.icon-color:hover{
+    transform: scale(2.0);
+    transition: 1s ease-out;
+}
+
+.home-details-name-intro{
+    font-size: 24px;
+    font-family: "Poppins SemiBold";
+}
+
+.home-details-role-intro{
+    font-size: 20px;
+    font-family: "Poppins SemiBold";
+}
+
+.primary-text{
+   color: (--white);
+}
+
+.profile-picture-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.profile-picture{
+    background: url("../../assets/Home/profilephoto.JPG");
+    height: 92%;
+    width: 92%;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-picture:hover{
+    transform: scale(1.10);
+    transition: 1s ease-out;
+}
+
+@media screen and (max-width:500px) {
+    .home-parent{
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+       
+    .home-details{
+        width: 100%
+    }
+
+    .profile-picture-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;    
+        margin: 0 0px 0 0px;
+
+    }
+
+    .profile-parent-container{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: center;
+        margin-top: 5%;
+    }
+}
