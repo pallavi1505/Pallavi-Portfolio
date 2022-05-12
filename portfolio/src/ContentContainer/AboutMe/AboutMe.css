@@ -14,5 +14,72 @@
     height:550px;
     width: 95%;
     box-shadow: 0px 0px 10px -2px #1f2235;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-me-text{
+   color: #4d4d52;
+   font-family: "Poppins ExtraBold";
+   text-align: justify;
+}
+
+.highlighted-text{
+    color: #F57F17;
+}
+
+.about-me-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.parent-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+}
+
+.image1{
+    background: url("../../assets/AboutMe/UNC.JPG");
+    height: 225px;
+    width: 225px;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.image2{
+    background: url("../../assets/AboutMe/Mishty.jpg");
+    height: 225px;
+    width: 225px;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.image3{
+    background: url("../../assets/AboutMe/Hike.JPG");
+    height: 225px;
+    width: 225px;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.about-info-text{
+    color: #4d4d52;
+   font-family: "Poppins";
 }
