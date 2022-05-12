@@ -28,7 +28,7 @@ export default function Header() {
 
     let getHeaderOptions = (screen,i) =>{
         return (
-                <div key={screen.screen_name} className={getHeaderOptionsClass(i)} onClick={()=> switchScreen(i,screen)}>
+                <div key={screen.screen_name} className={getHeaderOptionsClass(i) +` header-option`} onClick={()=> switchScreen(i,screen)}>
                     <span>{screen.screen_name}</span>
                 </div>
             )

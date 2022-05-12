@@ -4,6 +4,26 @@ export  const TOTAL_SCREENS = [
     {
         screen_name:"Home",
         component: Home
+    },
+    {
+        screen_name:"About Me",
+        component: Home
+    },
+    {
+        screen_name:"Work History",
+        component: Home
+    }, 
+    {
+        screen_name:"Education",
+        component: Home
+    },
+    {
+        screen_name:"Awards",
+        component: Home
+    },
+    {
+        screen_name:"Contact Me",
+        component: Home
     }
 ];
 
