@@ -2,8 +2,20 @@ import React from 'react'
 import Typical from 'react-typical'
 import Header from './Header/Header';
 import './Home.css';
+import ScrollService from '../../utilities/ScrollService';
+import Animations from '../../utilities/Animations';
 
-export default function Home() {
+export default function Home(props) {
+    let fadeInHandler= (screen) =>{
+        if(screen.fadeScreen!==props.id)
+        {
+            return
+        }
+        Animations.animations.fadeInScreen(props.id)
+    }
+  
+    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInHandler);
+
     return (
         <div className='home-container'>
             <Header/>

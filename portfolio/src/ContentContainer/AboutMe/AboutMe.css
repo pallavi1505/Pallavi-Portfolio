@@ -1,0 +1,18 @@
+.about-me-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-content-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-me-content{
+    height:550px;
+    width: 95%;
+    box-shadow: 0px 0px 10px -2px #1f2235;
+    margin-bottom: 2%;
+}
