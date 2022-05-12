@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import TitleComponent from '../../utilities/TitleComponent/TitleComponent';
 import { TOTAL_SCREENS } from '../../utilities/utils';
 import './AboutMe.css';
+import ScrollService from '../../utilities/ScrollService';
+import Animations from '../../utilities/Animations'
 
 export default function () {
   let leftMargin = () =>{
