@@ -1,10 +1,12 @@
 import React from 'react'
 import Typical from 'react-typical'
+import Header from './Header/Header';
 import './Home.css';
 
 export default function Home() {
     return (
         <div className='home-container'>
+            <Header/>
             <div className='home-parent'>
                 <div className='home-details'>
                     <div className='colz'>
@@ -23,7 +25,6 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-
                     <div className='home-details-name-intro'>
                         <span className='primary-text'>
                             {" "}
@@ -35,14 +36,14 @@ export default function Home() {
                         <span className='primary-text'>
                             {" "}
                             <h1>
-                               {/* <Typical 
+                               <Typical 
                                loop={Infinity}
                                steps={[
                                    "Enthusiastic Developer", 2000,
                                    "Full Stack Developer", 2000,
                                    "Cross Platform Developer", 2000
                                ]}
-                               /> */}
+                               />
                             </h1>
                         </span>
                     </div>
