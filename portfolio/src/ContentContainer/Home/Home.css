@@ -1,10 +1,11 @@
 .home-container{
-    background-color: #4d4d52;
+    background-color: #333333;
     display: flex;
     text-align: center;
     justify-content: center;
     height: 20%;
-    min-height: fit-content;flex-direction: column;
+    min-height: fit-content;
+    flex-direction: column;
 }
 
 .home-parent{
@@ -14,7 +15,7 @@
     flex-grow: 1;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: -9%;
+    margin-bottom: -6%;
 }
 
 

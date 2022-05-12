@@ -39,9 +39,9 @@ export default function Home() {
                                <Typical 
                                loop={Infinity}
                                steps={[
-                                   "Enthusiastic Developer", 2000,
                                    "Full Stack Developer", 2000,
-                                   "Cross Platform Developer", 2000
+                                   "Cross Platform Developer", 2000,
+                                   "Problem Solver", 2000
                                ]}
                                />
                             </h1>
