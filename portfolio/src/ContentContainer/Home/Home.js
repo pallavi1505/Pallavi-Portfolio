@@ -7,7 +7,7 @@ import Animations from '../../utilities/Animations';
 
 export default function Home(props) {
     let fadeInHandler= (screen) =>{
-        if(screen.fadeScreen!==props.id)
+        if(screen.fadeInScreen!==props.id)
         {
             return
         }

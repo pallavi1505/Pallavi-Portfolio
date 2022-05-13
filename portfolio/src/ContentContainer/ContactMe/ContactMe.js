@@ -55,7 +55,7 @@ export default function ContactMe(props) {
   }
 
   let fadeInHandler= (screen) =>{
-      if(screen.fadeScreen!==props.id)
+      if(screen.fadeInScreen!==props.id)
       {
           return
       }
