@@ -27,24 +27,29 @@ export default function Work(props) {
     
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInHandler);
   return (
-    <div className='work-main-container' id={props.id || ""}>
-        <TitleComponent title={"Work Experience"} subTitle={`My professional journey until now...`} leftMargin={leftMargin()} width={componentWidth()}/>
-        <div className='work-content-parent-conatiner'>
-            <div className='work-card-content'>
-                <div className='style-div-container'>
-                    <div className='style-div'>
-                        <div className='style-div' style={{marginLeft:"6px"}}>
-                            <div className='experience-content-holder'>
-                                {
-                                    WORK_EXPERIENCE.map((experience)=>(
-                                        <ExperienceHolder />
-                                    ))
-                                }
-                            </div>                            
+    <div>
+        <div className='work-container screen-container' id={props.id || ""}>
+            <div className='work-parent-container'>
+                <TitleComponent title={"Work"} subTitle={`My Professional journey until now .... `} leftMargin={leftMargin()} width={componentWidth()}/>
+                <div className='work-content-conatiner'>
+                    <div className='work-content'>
+                        <div className='background-wrapper'>
+                            <div className='background-style-div'>
+                            </div>
                         </div>
-                    </div>
+                        <div className='experience-content-holder'>
+                            {
+                                WORK_EXPERIENCE.map((experience)=>(
+                                <ExperienceHolder title={experience.title} 
+                                    duration={experience.duration} 
+                                    organization={experience.organization}
+                                    work={experience.work}
+                                />
+                                ))
+                            }
+                        </div>     
+                    </div>  
                 </div>
-               
             </div>
         </div>
     </div>
