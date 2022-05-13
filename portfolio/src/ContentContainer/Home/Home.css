@@ -15,7 +15,7 @@
     flex-grow: 1;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: -6%;
+    margin-bottom: -3%;
 }
 
 .highlighted-text{
@@ -83,9 +83,6 @@
     transition: 1s ease-out;
 }
 
-.btn-style{
-width: 250px;
-}
 @media screen and (max-width:500px) {
     .home-parent{
         color: aliceblue;

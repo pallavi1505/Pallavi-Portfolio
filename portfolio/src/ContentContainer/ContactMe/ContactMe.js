@@ -86,6 +86,9 @@ export default function ContactMe(props) {
               </div>
               <div className='divider-div'></div>
               <div className='let-me-contact-you-content'>
+                <div className='horizontal-divider-div-container'>
+                  <div className='horizontal-divider-div'></div>
+                </div>
                 <div className='contact-propmt'>Or, Let me reach out to you!<br/> Please fill out the form and I will get back to you soon as possible!</div>
                 <div className='contact-form'>
                 <form onSubmit={submitForm}>
@@ -113,9 +116,9 @@ export default function ContactMe(props) {
                         <textarea type="textarea" onChange={handleMessageChange} rows={3} value={message} className='input-style' placeholder='Type your Message.'/>
                       </div>
                     </div>
-                    <div className='send-button form-alignment'>
+                    <div className='send-button'>
                       <button type='submit' className='btn highlighted-btn'>
-                        Send<i className='fa fa-paper-plane'/>
+                        Send
                       </button>
                     </div>
                   </form>
