@@ -83,6 +83,9 @@
     transition: 1s ease-out;
 }
 
+.btn-style{
+width: 250px;
+}
 @media screen and (max-width:500px) {
     .home-parent{
         color: aliceblue;

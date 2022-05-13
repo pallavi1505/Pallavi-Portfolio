@@ -71,9 +71,9 @@ export default function Home(props) {
 
                     <div className='home-options'>
                         <a href='Pallavi_Resume.pdf' download="Pallavi Shirodkar Resume.pdf">
-                        <button className='btn highlighted-btn'>
+                        <button className='btn highlighted-btn btn-style'>
                         {" "}
-                        Download Resume {" "}
+                        Download Resume<i className='fa fa-download'/>
                         </button>
                         </a>
                     </div>
