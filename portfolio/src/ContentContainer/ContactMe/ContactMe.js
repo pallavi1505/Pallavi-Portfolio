@@ -32,7 +32,11 @@ export default function ContactMe(props) {
       let data ={
         name,email,phone,message
       }
-      console.log("Data: "+data.name+" "+data.email+" "+data.phone+" "+data.message)
+      // console.log("Data: "+data.name+" "+data.email+" "+data.phone+" "+data.message)
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
     }
     catch(error)
     {
