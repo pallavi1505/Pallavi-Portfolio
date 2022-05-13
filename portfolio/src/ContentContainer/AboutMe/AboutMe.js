@@ -45,19 +45,19 @@ export default function (props) {
                         I am a fervent Hiker and love to explore Rustic places. 
                         </div>
                         <div className='about-me-image-container'>
-                            <div className='parent-container'>
+                            <div className='parent-container' style={{flexDirection:"column"}}>
                                 <div className='image1'>
                                 </div>
                                 <span className='about-info-text'>My First Day at UNC Charlotte!</span>
                             </div>
 
-                            <div className='parent-container'>
+                            <div className='parent-container' style={{flexDirection:"column"}}>
                                 <div className='image2'>
                                 </div>
                                 <span className='about-info-text'>One of my fur babies.."Mishty"</span>
                             </div>
 
-                            <div className='parent-container'>
+                            <div className='parent-container' style={{flexDirection:"column"}}>
                                 <div className='image3'>
                                 </div>
                                 <span className='about-info-text'>One of the hike trials @Catawba</span>

@@ -49,6 +49,40 @@
     display: none;
 }
 
+.contact-form-prompt{
+    font-size: 18px;
+    color: aliceblue;
+    width: 95px;
+}
+
+.form-alignment
+{
+    margin-top: 2%;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.input-style{
+    width: 100%;
+}
+
+.send-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
 @media only screen and (max-width:500px) {
     .item-name{
         display: block;
