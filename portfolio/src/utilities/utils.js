@@ -35,3 +35,23 @@ export const GET_SCREEN_INDEX = (screen_name) =>
         return -1;
     }
 }
+
+export  const WORK_EXPERIENCE = [
+    {
+        title:"Incoming Software Engineer Intern Summer 2022",
+        organization: "Salom Build",
+        duration:"Jun 2022 - Aug 2022"
+    }
+    ,
+    {
+        title:"Graduate Teaching Assistant",
+        organization: "University of North Carolina at Charlotte",
+        duration:"Jan 2022 - May 2022"
+    },
+    {
+        title:"Front End Developer and Application Developer",
+        organization: "Schlumberger",
+        duration:"Mar 2018 - Jul 2021"
+    }
+
+];
