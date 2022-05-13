@@ -5,6 +5,8 @@ import './ContactMe.css';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
 import ExperienceHolder from '../WorkHistory/ExperienceHolder/ExperienceHolder';
+import axios from 'axios';
+import {toast} from 'react-toastify';
 
 export default function ContactMe(props) {
 
@@ -12,6 +14,8 @@ export default function ContactMe(props) {
   const[email, setEmail] = useState("");
   const[phone, setPhone] = useState("");
   const[message, setMessage] = useState("");
+  const[bool, setBool] =useState(false);
+  const[banner, setBanner] =useState(false);
 
   const handleNameChange= (eve) =>{
     setName(eve.target.value);
@@ -26,22 +30,42 @@ export default function ContactMe(props) {
     setMessage(eve.target.value);
   }
 
-  const submitForm= (eve) =>{
+  const submitForm= async (eve) =>{
     eve.preventDefault();
+
     try{
+      debugger
+
       let data ={
         name,email,phone,message
       }
+
+      setBool(true);
+      const res = await axios.post('/contact', data);
+      if(data.name.length ===0 || data.email.length ===0 || data.message.length === 0){
+        setBanner(res.data.msg);
+        toast.error(res.data.msg);
+        setBool(false);
+      }
+      else if(res.status === 200)
+      {
+        debugger;
+        setBanner(res.data.msg);
+        toast.success(res.data.msg);
+        setBool(false);
+      }
+      debugger
       // console.log("Data: "+data.name+" "+data.email+" "+data.phone+" "+data.message)
-      setName("");
-      setEmail("");
-      setPhone("");
-      setMessage("");
     }
     catch(error)
     {
       console.log(error)
     }
+
+    setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
   }
 
   let leftMargin = () =>{
@@ -93,6 +117,7 @@ export default function ContactMe(props) {
                 <div className='contact-form'>
                 <form onSubmit={submitForm}>
                     <div className='form-input'>
+                      <p>{banner}</p>
                       <label htmlFor='name' className='contact-form-prompt contact-text'>Name</label>
                       <div className='input-container'>
                         <input type="text" onChange={handleNameChange} value={name} className='input-style' placeholder='Type your Name.'/>
@@ -118,7 +143,7 @@ export default function ContactMe(props) {
                     </div>
                     <div className='send-button'>
                       <button type='submit' className='btn highlighted-btn'>
-                        Send
+                        Send <i className='fa fa-paper-plane'/>
                       </button>
                     </div>
                   </form>
