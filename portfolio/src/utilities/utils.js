@@ -3,6 +3,7 @@ import Home from '../ContentContainer/Home/Home';
 import Work from '../ContentContainer/WorkHistory/Work';
 import Education from '../ContentContainer/Education/Education';
 import Skill from '../ContentContainer/Skill/Skill';
+import ContactMe from '../ContentContainer/ContactMe/ContactMe';
 
 export  const TOTAL_SCREENS = [
     {
@@ -28,6 +29,11 @@ export  const TOTAL_SCREENS = [
     {
         screen_name:"Education",
         component: Education
+    }
+    ,
+    {
+        screen_name:"Contact Me",
+        component: ContactMe
     }
     ,
 ];
