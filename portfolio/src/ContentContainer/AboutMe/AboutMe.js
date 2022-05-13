@@ -48,19 +48,19 @@ export default function (props) {
                             <div className='parent-container'>
                                 <div className='image1'>
                                 </div>
-                                <span>My First Day at UNC Charlotte!</span>
+                                <span className='about-info-text'>My First Day at UNC Charlotte!</span>
                             </div>
 
                             <div className='parent-container'>
                                 <div className='image2'>
                                 </div>
-                                <span>One of my fur babies.."Mishty"</span>
+                                <span className='about-info-text'>One of my fur babies.."Mishty"</span>
                             </div>
 
                             <div className='parent-container'>
                                 <div className='image3'>
                                 </div>
-                                <span>One of the hike trials @Catawba</span>
+                                <span className='about-info-text'>One of the hike trials @Catawba</span>
                             </div>
                         </div>
                     </div>  

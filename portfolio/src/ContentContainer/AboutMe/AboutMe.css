@@ -22,9 +22,10 @@
 }
 
 .about-me-text{
-   color: #4d4d52;
-   font-family: "Poppins ExtraBold";
-   text-align: justify;
+    font-size: 15px;
+    color: #4d4d52;
+    font-family: "Poppins ExtraBold";
+    text-align: justify;
 }
 
 .highlighted-text{
@@ -80,11 +81,17 @@
 }
 
 .about-info-text{
+    font-size: 15px;
     color: #4d4d52;
-   font-family: "Poppins";
+    font-family: "Poppins";
 }
 
 @media only screen and (max-width:500px) {
+
+    .about-me-content{
+        width: 90%;
+    }
+    
     .about-me-image-container{
         flex-direction: column;
     }
@@ -96,7 +103,7 @@
     }
 
     .about-info-text{
-       font-size: 13px;
+       font-size: 12px;
     }
 
     .parent-container{
