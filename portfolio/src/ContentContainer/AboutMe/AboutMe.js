@@ -4,7 +4,6 @@ import { TOTAL_SCREENS } from '../../utilities/utils';
 import './AboutMe.css';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
-import { useState } from 'react';
 
 export default function (props) {
   let leftMargin = () =>{
@@ -24,26 +23,6 @@ export default function (props) {
       }
       Animations.animations.fadeInScreen(props.id)
   }
-
-//   let handleShowDialog = (image) => {
-//     let src= ""
-//     switch(image)
-//     {
-//         case 1: src= "../../assets/AboutMe/UNC.JPG";
-//         break;
-//         case 2: src= "../../assets/AboutMe/Mishty.jpg";
-//         break;
-//         case 3: src= "../../assets/AboutMe/Hike.JPG";
-//         break;
-//     }
-//     console.log(src)
-//     setImageSrc(src)
-//     setModalState(true)
-//   };
-
-//   let handleCloseDialog = () =>{
-//     setModalState(false)
-//   }
 
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInHandler);
 

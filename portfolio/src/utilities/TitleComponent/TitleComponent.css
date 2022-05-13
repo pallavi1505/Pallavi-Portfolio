@@ -49,7 +49,31 @@
 }
 
 .title-seperator-blob div{
-    width: 30px;
     border-radius: 10px;
     background-color:#F57F17; 
+}
+
+@media only screen and (max-width:500px) {
+    .main-titleText{
+        font-size: 20px;
+    }
+
+    .sub-titleText{
+        font-size: 13px;
+    }
+
+    .title-seperator-line{
+        width: 100px;
+        height: 2px;
+    }
+
+    .title-seperator-blob{
+        height: 5px;
+        margin-top: -2px;
+    }
+
+    .title-seperator-blob div{
+        border-radius: 5px;
+    }
+
 }
