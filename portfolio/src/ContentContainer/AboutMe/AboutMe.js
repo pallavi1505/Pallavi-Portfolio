@@ -1,13 +1,13 @@
 import React,{useEffect} from 'react'
 import TitleComponent from '../../utilities/TitleComponent/TitleComponent';
-import { TOTAL_SCREENS } from '../../utilities/utils';
+import { GET_SCREEN_INDEX, TOTAL_SCREENS } from '../../utilities/utils';
 import './AboutMe.css';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
 
 export default function (props) {
   let leftMargin = () =>{
-    let margin = 100 / TOTAL_SCREENS.length;
+    let margin = parseInt(100 / TOTAL_SCREENS.length) * GET_SCREEN_INDEX(props.id);
     return margin;
   }
 

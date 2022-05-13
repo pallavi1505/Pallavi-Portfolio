@@ -14,7 +14,8 @@ export default function (props) {
             </div>
           </div>
           <div className='organization-row'>
-            {props.organization}
+            <div className='organization-text'>{props.organization}</div>
+            <div className='grade-text'>{props.grade}</div>
           </div>
           <div className='work-row'>
             {props.work.map((role)=>(

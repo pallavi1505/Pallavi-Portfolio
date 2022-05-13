@@ -1,6 +1,8 @@
 import AboutMe from '../ContentContainer/AboutMe/AboutMe';
 import Home from '../ContentContainer/Home/Home';
 import Work from '../ContentContainer/WorkHistory/Work';
+import Education from '../ContentContainer/Education/Education';
+import Skill from '../ContentContainer/Skill/Skill';
 
 export  const TOTAL_SCREENS = [
     {
@@ -16,7 +18,18 @@ export  const TOTAL_SCREENS = [
     {
         screen_name:"Work",
         component: Work
-    },
+    }
+    ,
+    {
+        screen_name:"Skill-Set",
+        component: Skill
+    }
+    ,
+    {
+        screen_name:"Education",
+        component: Education
+    }
+    ,
 ];
 
 export const GET_SCREEN_INDEX = (screen_name) =>
@@ -26,14 +39,15 @@ export const GET_SCREEN_INDEX = (screen_name) =>
         return -1
     }
 
-    for(let  i=0;i<TOTAL_SCREENS.length;i++)
+    for(let i=0;i<TOTAL_SCREENS.length;i++)
     {
         if(TOTAL_SCREENS[i].screen_name === screen_name)
         {
             return i;
         }
-        return -1;
     }
+    return -1;
+
 }
 
 export  const WORK_EXPERIENCE = [
@@ -66,4 +80,116 @@ export  const WORK_EXPERIENCE = [
             "-Engaged in Agile SCRUM Methodologies and actively participated in all phases of Software Development Life Cycle (SDLC) to build scalable, robust web and mobile applications."],
     }
 
+];
+
+export  const EDUCATION = [
+    {
+        degree:"Master of Science in Computer Science",
+        institute: "University of North Carolina at Charlotte",
+        duration:"Aug 2021 - May 2023",
+        grade:"Cgpa: 3.75/4.0",
+        courses:[],
+    },
+    {
+        degree:"Post Graduate Diploma in Digital Computing",
+        institute: "CDAC, Pune",
+        duration:"Aug 2017 - Mar 2018",
+        grade:"A Grade",
+        courses:[],
+    },
+    {
+        degree:"Bachelor of Engineering, Computer Science",
+        institute: "Shivaji University, India",
+        duration:"Aug 2012 - May 2016",
+        grade:"Cgpa: 3.6/4.0",
+        courses:[],
+    }
+    
+];
+
+export const SKILLS = [
+    {
+        type:"Languages",
+        items: [
+            {
+                name:"Python",
+                image:"python"
+            },
+            {
+                name:"Java",
+                image:"java"
+            },
+            {
+                name:"JavaScript",
+                image:"javascript"
+            },
+            {
+                name:"TypeScript",
+                image:"typescript"
+            },
+            {
+                name:"C#",
+                image:"csharp"
+            },
+            
+            {
+                name:"SQL",
+                image:"sql"
+            }
+        ]
+    },   
+    {
+        type:"Web Technologies",
+        items: [
+            {
+                name:"React",
+                image:"react"
+            },
+            {
+                name:"Angular",
+                image:"angular"
+            },
+            {
+                name:"Node",
+                image:"node"
+            },
+            {
+                name:"HTML",
+                image:"html"
+            },
+            {
+                name:"CSS",
+                image:"css"
+            },
+        ]
+    },
+    {
+        type:"Frameworks & Tools",
+        items: [
+            {
+                name:"Visual Studio",
+                image:"vs"
+            },
+            {
+                name:"Visual Studio Code",
+                image:"vsc"
+            },
+            {
+                name:"Xamarin",
+                image:"xamarin"
+            },
+            {
+                name:"Xcode",
+                image:"xcode"
+            },
+            {
+                name:"GitHub",
+                image:"github"
+            },
+            {
+                name:"Jupyter",
+                image:"jupyter"
+            },
+        ]
+    },    
 ];

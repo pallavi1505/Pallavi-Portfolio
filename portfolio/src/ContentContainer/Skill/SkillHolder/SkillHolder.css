@@ -1,0 +1,67 @@
+.skill-parent-box{
+    border: solid;
+    border-width: 1px;
+    border-color: #999999;
+    opacity: 1;
+    border-radius: 20px;
+    margin: 2%;
+}
+
+.skill-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 3% 2% 3%;
+
+}
+
+.category-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.category-title-text{
+    font-size: 20px;
+    color: #4d4d52;
+    font-family: "Poppins ExtraBold";
+}
+
+.category-content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.category-content-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item-image{
+    height: 75px;
+    width: 75px;
+}
+
+.item-name{
+    /* display: none; */
+}
+
+@media only screen and (max-width:500px) {
+    .item-name{
+        display: block;
+    }
+
+    .category-content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .category-content-item{
+        align-items: center;
+        margin-top: 6%;
+    }
+}

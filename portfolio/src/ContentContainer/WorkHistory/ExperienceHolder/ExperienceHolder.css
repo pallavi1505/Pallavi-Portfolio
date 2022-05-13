@@ -36,9 +36,23 @@
 }
 
 .organization-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.organization-text{
     color:#4d4d52;
     font-size: 15px;
     font-family: "Poppins ExtraBold";
+}
+
+.grade-text{
+    color:#4d4d52;
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: 600;
 }
 
 .bullet-div{

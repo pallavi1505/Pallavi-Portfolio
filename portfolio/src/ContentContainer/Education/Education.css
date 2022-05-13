@@ -1,0 +1,37 @@
+.education-parent-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-content-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.education-content{
+    width: 95%;
+    box-shadow: 0px 0px 10px -2px #1f2235;
+    margin-bottom: 2%;
+    padding: 2% 3% 2% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.background-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-style-div{
+    background-color: #F57F17;
+    height: 100%;
+    width: 3px;
+    background-size: contain;
+    margin-left: 5%;
+}
+
