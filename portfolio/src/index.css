@@ -84,7 +84,7 @@ body ::-webkit-scrollbar-thumb {
 .btn {
   border-radius: 50px;
   padding: 14px 0;
-  width: 160px;
+  width: 180px;
   cursor: pointer;
   transition: 0.2s;
   font-family: "Poppins SemiBold";
@@ -114,8 +114,9 @@ body ::-webkit-scrollbar-thumb {
 
 .highlighted-btn {
   color: var(--white);
-
-  font-size: 12px;
+  font-size: 15px;
+  padding: 2%;
+  font-family: "Poppins Extrabold";
   background-color: #F57F17;
 }
 @media only screen and (max-width: 568px) {

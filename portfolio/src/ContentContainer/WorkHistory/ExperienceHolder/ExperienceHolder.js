@@ -19,7 +19,7 @@ export default function (props) {
           <div className='work-row'>
             {props.work.map((role)=>(
               <div className='role-style'>
-                <div>{role}</div>
+                <div className='role-text'>{role}</div>
               </div>
             ))}
           </div>
