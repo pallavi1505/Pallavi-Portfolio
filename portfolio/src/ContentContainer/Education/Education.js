@@ -32,19 +32,34 @@ const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInHan
         <TitleComponent title={"Education"} subTitle={`My Educational journey until now .... `} leftMargin={leftMargin()} width={componentWidth()}/>
         <div className='education-content-conatiner'>
             <div className='education-content'>
-                <div className='background-wrapper'>
-                    <div className='background-style-div'>
-                    </div>
-                </div>
                 <div className='experience-content-holder'>
+                  <div className='style-div-container'>
+                      <div className='style-div div1-height' >
+                      </div>
+                      <div className='style-div div1-height' >
+                      </div>
+                      <div className='style-div div1-height' >
+                      </div>
+                      </div>
                     {
                         EDUCATION.map((experience)=>(
-                        <ExperienceHolder title={experience.degree} 
+                          <div>
+                            <ExperienceHolder title={experience.degree} 
                             duration={experience.duration} 
                             organization={experience.institute}
                             work={experience.courses}
                             grade={experience.grade}
-                        />
+                          />
+                            <div className='style-div-container'>
+                                <div className='style-div div2-height' >
+                                </div>
+                                <div className='style-div div2-height' >
+                                </div>
+                                <div className='style-div div2-height' >
+                                </div>
+                              </div>
+                      </div>
+                        
                         ))
                     }
                 </div>     

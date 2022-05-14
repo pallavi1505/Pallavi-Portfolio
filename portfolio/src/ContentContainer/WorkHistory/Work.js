@@ -32,21 +32,52 @@ export default function Work(props) {
                 <TitleComponent title={"Work"} subTitle={`My Professional journey until now .... `} leftMargin={leftMargin()} width={componentWidth()}/>
                 <div className='work-content-conatiner'>
                     <div className='work-content'>
-                        <div className='background-wrapper'>
-                            <div className='background-style-div'>
-                            </div>
-                        </div>
                         <div className='experience-content-holder'>
+                            <div className='style-div-container'>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                        <div className='style-div div1-height' >
+                                        </div>
+                                    </div>
                             {
                                 WORK_EXPERIENCE.map((experience)=>(
-                                <ExperienceHolder title={experience.title} 
+                                <div>
+                                        <ExperienceHolder title={experience.title} 
                                     duration={experience.duration} 
                                     organization={experience.organization}
                                     work={experience.work}
                                 />
-                                ))
-                            }
-                        </div>     
+                                <div className='style-div-container'>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        <div className='style-div div2-height' >
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                    ))
+                                }
+                            </div>     
                     </div>  
                 </div>
             </div>
