@@ -124,6 +124,10 @@
     justify-content: center;
 }
 
+.banner-style{
+    color: #F57F17;
+}
+
 @media only screen and (max-width:500px) {
     .parent-container{
         display: flex;

@@ -4,9 +4,7 @@ import { EDUCATION, TOTAL_SCREENS,WORK_EXPERIENCE,GET_SCREEN_INDEX } from '../..
 import './ContactMe.css';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
-import ExperienceHolder from '../WorkHistory/ExperienceHolder/ExperienceHolder';
-import axios from 'axios';
-import {toast} from 'react-toastify';
+import emailjs from 'emailjs-com';
 
 export default function ContactMe(props) {
 
@@ -30,37 +28,15 @@ export default function ContactMe(props) {
     setMessage(eve.target.value);
   }
 
-  const submitForm= async (eve) =>{
+  const submitForm= (eve) =>{
     eve.preventDefault();
 
-    try{
-      debugger
-
-      let data ={
-        name,email,phone,message
-      }
-
-      setBool(true);
-      const res = await axios.post('/contact', data);
-      if(data.name.length ===0 || data.email.length ===0 || data.message.length === 0){
-        setBanner(res.data.msg);
-        toast.error(res.data.msg);
-        setBool(false);
-      }
-      else if(res.status === 200)
+    emailjs.sendForm("service_69oz2v9", "template_4ejvnc9",eve.target,"ul0AlB_akclHFuQGn").then((res)=>{
+      if (res.text ==="OK")
       {
-        debugger;
-        setBanner(res.data.msg);
-        toast.success(res.data.msg);
-        setBool(false);
+        setBanner("Thank you for contacting me. I will get back to you on your email/phone, soon as possible!")
       }
-      debugger
-      // console.log("Data: "+data.name+" "+data.email+" "+data.phone+" "+data.message)
-    }
-    catch(error)
-    {
-      console.log(error)
-    }
+    }).catch(err=> console.log(err));
 
     setName("");
       setEmail("");
@@ -116,29 +92,29 @@ export default function ContactMe(props) {
                 <div className='contact-propmt'>Or, Let me reach out to you!<br/> Please fill out the form and I will get back to you soon as possible!</div>
                 <div className='contact-form'>
                 <form onSubmit={submitForm}>
-                    <div className='form-input'>
-                      <p>{banner}</p>
+                <p className='banner-style'>{banner}</p>
+                    <div className='form-input'> 
                       <label htmlFor='name' className='contact-form-prompt contact-text'>Name</label>
                       <div className='input-container'>
-                        <input type="text" onChange={handleNameChange} value={name} className='input-style' placeholder='Type your Name.'/>
+                        <input type="text" onChange={handleNameChange} value={name} className='input-style' name='name' placeholder='Type your Name.'/>
                       </div>
                     </div>
                     <div className='form-input form-alignment'>
                       <label htmlFor='email' className='contact-form-prompt contact-text'>Email</label>
                       <div className='input-container'>
-                        <input type="text" onChange={handleEmailChange} value={email} className='input-style' placeholder='Type your Email.'/>
+                        <input type="text" onChange={handleEmailChange} value={email} className='input-style' name='email' placeholder='Type your Email.'/>
                       </div>
                     </div>
                     <div className='form-input form-alignment'>
                       <label htmlFor='phone' className='contact-form-prompt contact-text'>Phone</label>
                       <div className='input-container'>
-                        <input type="text" onChange={handlePhoneChange} value={phone} className='input-style' placeholder='Type your contact Number.'/>
+                        <input type="text" onChange={handlePhoneChange} value={phone} className='input-style' name='phone' placeholder='Type your contact Number.'/>
                       </div>
                     </div>
                     <div className='form-input form-alignment'>
                       <label htmlFor='message' className='contact-form-prompt contact-text'>Message</label>
                       <div className='input-container'>
-                        <textarea type="textarea" onChange={handleMessageChange} rows={3} value={message} className='input-style' placeholder='Type your Message.'/>
+                        <textarea type="textarea" onChange={handleMessageChange} rows={3} value={message} name='message' className='input-style' placeholder='Type your Message.'/>
                       </div>
                     </div>
                     <div className='send-button'>
