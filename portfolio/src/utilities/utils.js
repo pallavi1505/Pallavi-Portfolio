@@ -4,6 +4,7 @@ import Work from '../ContentContainer/WorkHistory/Work';
 import Education from '../ContentContainer/Education/Education';
 import Skill from '../ContentContainer/Skill/Skill';
 import ContactMe from '../ContentContainer/ContactMe/ContactMe';
+import Award from '../ContentContainer/Awards/Award';
 
 export  const TOTAL_SCREENS = [
     {
@@ -29,6 +30,11 @@ export  const TOTAL_SCREENS = [
     {
         screen_name:"Education",
         component: Education
+    }
+    ,
+    {
+        screen_name:"Awards",
+        component: Award
     }
     ,
     {
@@ -198,4 +204,28 @@ export const SKILLS = [
             },
         ]
     },    
+];
+
+export  const AWARDS = [
+    {
+        name:"Awesome Award",
+        organization: "Schlumberger",
+        duration:"Jul 2020 - Sep 2020",
+        purpose:"Awesome Award purpose",
+        image:"award1.png"
+    },
+    {
+        name:"Well Done Award",
+        organization: "Schlumberger",
+        duration:"Oct 2019 - Dec 2019",
+        purpose:"Well Done Award purpose",
+        image:"award2.png"
+    },
+    {
+        name:"Merit Scholarship",
+        organization: "Shivaji University, India",
+        duration:"Apr 2016 - Present",
+        purpose:"Merit Scholarship purpose",
+        image:"award3.png"
+    }
 ];
