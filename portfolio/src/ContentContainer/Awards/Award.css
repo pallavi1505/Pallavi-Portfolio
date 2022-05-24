@@ -9,3 +9,18 @@
 .award-content-parent-conatiner{
     width: 100%;
 }
+
+.rec-dot_active{
+    box-shadow: 0 0 1px 3px rgb(245 127 23) !important;
+    background-color:rgba(245 ,127 ,23, 0.5)  !important;
+}
+
+.rec-arrow:hover:enabled{
+    box-shadow: 0 0 1px 3px rgb(245 127 23) !important;
+    background-color:rgba(245 ,127 ,23, 0.5)  !important;
+}
+
+.rec-arrow{
+    box-shadow: 0 0 1px 3px rgb(245 127 23) !important;
+    background-color:rgba(255, 245, 235, 0.5)  !important;
+}
