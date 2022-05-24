@@ -24,3 +24,19 @@
     box-shadow: 0 0 1px 3px rgb(245 127 23) !important;
     background-color:rgba(255, 245, 235, 0.5)  !important;
 }
+
+.rec-pagination{
+    margin-top: 0px !important;
+}
+
+
+@media only screen and (max-width:500px) {
+
+    .rec-arrow-right{
+       display: none !important;
+    }
+
+    .rec-arrow-left{
+        display: none !important;
+     }
+}

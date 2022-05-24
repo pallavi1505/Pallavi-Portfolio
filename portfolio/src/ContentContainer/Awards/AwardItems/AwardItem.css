@@ -51,6 +51,7 @@
 
 .award-image{
     height: 100%;
+    cursor: pointer;
 }
 
 .award-link{
@@ -73,29 +74,31 @@
 .row1-text{
     color: #F57F17;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .row2-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 .row2-left-text{
-    color: aliceblue;
-    font-size: 18px;
+    color: #F57F17;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 
 .row2-right-text{
-    color: aliceblue;
-    font-size: 18px;
+    color: #F57F17;
+    font-size: 16px;
 }
 
 .row3-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: justify;
     margin-top: 3%;
 }
@@ -112,4 +115,42 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .award-content-parent-conatiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        margin-top: 2%;
+    }
+
+    .award-image-conatiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .award-content-conatiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width:100%;
+        margin-top: 4%;
+    }
+
+    .award-item-conatiner{
+       height: max-content;
+    }
+
+    .award-image-row{
+        width: 90%;
+        height: 200px;
+    }
+
+    .award-image-parent-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
 }

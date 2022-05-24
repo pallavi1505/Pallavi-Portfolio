@@ -10,13 +10,11 @@ export default function AwardItem(props) {
             <div className='award-image-conatiner'>
                 <div className='award-image-parent-container'>
                     <div className='award-image-row'>
-                        <img className='award-image' src={`../images/${props.image}`}>
+                        <img className='award-image' src={`../images/${props.image}`}
+                        onClick={()=> window.open(`../images/${props.image}`)}
+                        >
                         </img>
                     </div>
-                    {/* <div className='award-link'>
-                        <CallMadeIcon className='link-color'/>
-                    </div>
-                     */}
                 </div>
             </div>
 
@@ -29,7 +27,11 @@ export default function AwardItem(props) {
                     <span className='row2-right-text'>{props.duration}</span>
                 </div>
                 <div className='row3-container'>
-                    <span className='row3-text'>{props.purpose}</span>
+                {
+                    props.purpose.map((p) =>(
+                        <p className='row3-text'>{p}</p>
+                    ))
+                }
                 </div>
             </div>
         </div>

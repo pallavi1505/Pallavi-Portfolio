@@ -211,21 +211,23 @@ export  const AWARDS = [
         name:"Awesome Award",
         organization: "Schlumberger",
         duration:"Jul 2020 - Sep 2020",
-        purpose:"Awesome Award purpose",
+        purpose:[
+        'In Q3 of 2020, when "Work-From-Home" culture began I simultaneously worked on 3 live projects - "eClaims" in which I worked as a front-end developer - created reusable templates, "MDM Wells" for integrating Google Map APIs and as a Mobile Application Developer working in Xamarin - integrating one newly required feature into an existing application. I also had to manage communications with the backend and the QA team. I was not only successfully able to work simultaneously but I also delivered my deliverables within the given timeframe.'
+        ],
         image:"award1.png"
     },
     {
         name:"Well Done Award",
         organization: "Schlumberger",
         duration:"Oct 2019 - Dec 2019",
-        purpose:"Well Done Award purpose",
+        purpose:[`One of the valued products of Schlumberger's Digital Productivity Services Team are "eClaims" and "ApproveBuddy". I participated in eClaims's and ApproveBuddy's phases right from its genesis to its completion. I single handedly developed the Business logic of the applications along with their User Interfaces for the iOS in Xamarin. With no lead developer present at the given moment, I looked after both the applications development and collaborated with various teams.`,`I was recognized for my Leadership, Extreme Dedication and Collaboration efforts`],
         image:"award2.png"
     },
     {
         name:"Merit Scholarship",
         organization: "Shivaji University, India",
         duration:"Apr 2016 - Present",
-        purpose:"Merit Scholarship purpose",
+        purpose:['Shivaji University granted me a Merit Scholarship for Academic Year 2015-2016, in the Third Year of My Engineering course for consistent Academic excellence and Representing Shivaji University at National Level Badminton Tournaments for 3 Years.'],
         image:"award3.png"
     }
 ];
