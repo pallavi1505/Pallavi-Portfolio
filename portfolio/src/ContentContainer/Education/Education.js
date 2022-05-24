@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import TitleComponent from '../../utilities/TitleComponent/TitleComponent';
-import { EDUCATION, TOTAL_SCREENS,WORK_EXPERIENCE,GET_SCREEN_INDEX } from '../../utilities/utils';
+import { EDUCATION, TOTAL_SCREENS,GET_SCREEN_INDEX } from '../../utilities/utils';
 import './Education.css';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
@@ -47,8 +47,9 @@ const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInHan
                             <ExperienceHolder title={experience.degree} 
                             duration={experience.duration} 
                             organization={experience.institute}
-                            work={experience.courses}
                             grade={experience.grade}
+                            courses= {experience.courses}
+                            downloadAvailable= {experience.downloadAvailable}
                           />
                             <div className='style-div-container'>
                                 <div className='style-div div2-height' >

@@ -80,6 +80,21 @@
     font-size: 15px;
 }
 
+.work-row{
+    margin-top: 2%;
+}
+
+.course-row{
+    margin-top: 2%;
+}
+
+.download-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2% 5% 0% 0%;
+}
+
 @media only screen and (max-width:500px) {
     .experience-content-container{
         margin: 3% 4% 3% 4%;
@@ -99,5 +114,11 @@
 
     .role-text{
         font-size: 12px;
+    }
+
+    .download-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }

@@ -99,8 +99,9 @@ export  const EDUCATION = [
         degree:"Master of Science in Computer Science",
         institute: "University of North Carolina at Charlotte",
         duration:"Aug 2021 - May 2023",
-        grade:"Cgpa: 3.75/4.0",
-        courses:[],
+        grade:"Cgpa: 3.83/4.0",
+        courses:['Algorithms and Data Structures',',',' Database Systems',',',' Software System Design and Implementation',',',' Network Based Design',',',' Knowledge Discovery in Databases',',',' Big Data Analytics in Competitive Analytics',',',' Intelligent Systems',',',' Computer Communications and Networks',',',' System Integration'],
+        downloadAvailable: ''
     },
     {
         degree:"Post Graduate Diploma in Digital Computing",
@@ -108,15 +109,16 @@ export  const EDUCATION = [
         duration:"Aug 2017 - Mar 2018",
         grade:"A Grade",
         courses:[],
+        downloadAvailable: ''
     },
     {
         degree:"Bachelor of Engineering, Computer Science",
         institute: "Shivaji University, India",
         duration:"Aug 2012 - May 2016",
-        grade:"Cgpa: 3.6/4.0",
+        grade:"Cgpa: 3.6/4.0 (Source: WES)",
         courses:[],
-    }
-    
+        downloadAvailable: 'Transcripts.pdf'
+    }  
 ];
 
 export const SKILLS = [
@@ -212,7 +214,7 @@ export  const AWARDS = [
         organization: "Schlumberger",
         duration:"Jul 2020 - Sep 2020",
         purpose:[
-        'In Q3 of 2020, when "Work-From-Home" culture began I simultaneously worked on 3 live projects - "eClaims" in which I worked as a front-end developer - created reusable templates, "MDM Wells" for integrating Google Map APIs and as a Mobile Application Developer working in Xamarin - integrating one newly required feature into an existing application. I also had to manage communications with the backend and the QA team. I was not only successfully able to work simultaneously but I also delivered my deliverables within the given timeframe.'
+        'In Q3 of 2020, when "Work-From-Home" culture began I simultaneously worked on 3 live projects - "eClaims" in which I worked as a front-end developer - I created reusable templates in React, "MDM Wells" for integrating Google Map APIs - where I created reusable Components in Angular and in "eClaims" Mobile Application Developer working in Xamarin - integrating one required feature into an existing application. I also collaborated with the Backend and QA team. I was not only successfully able to work simultaneously on many frontlines but I also delivered my deliverables within the given timeframe that required minimum QA efforts.'
         ],
         image:"award1.png"
     },
@@ -220,14 +222,14 @@ export  const AWARDS = [
         name:"Well Done Award",
         organization: "Schlumberger",
         duration:"Oct 2019 - Dec 2019",
-        purpose:[`One of the valued products of Schlumberger's Digital Productivity Services Team are "eClaims" and "ApproveBuddy". I participated in eClaims's and ApproveBuddy's phases right from its genesis to its completion. I single handedly developed the Business logic of the applications along with their User Interfaces for the iOS in Xamarin. With no lead developer present at the given moment, I looked after both the applications development and collaborated with various teams.`,`I was recognized for my Leadership, Extreme Dedication and Collaboration efforts`],
+        purpose:[`One of the valued products of Schlumberger's Digital Productivity Services Team are "eClaims" and "ApproveBuddy". I participated in eClaims's and ApproveBuddy's phases right from its genesis to its completion. I single handedly developed the Business logic of the applications along with their User Interfaces for the iOS in Xamarin. With no lead developer present at the given moment, I looked after both the applications' end-to-end development and collaborated with various teams.`,`I was recognized for my Leadership, Dedication and Collaboration efforts in the Projects`],
         image:"award2.png"
     },
     {
         name:"Merit Scholarship",
         organization: "Shivaji University, India",
         duration:"Apr 2016 - Present",
-        purpose:['Shivaji University granted me a Merit Scholarship for Academic Year 2015-2016, in the Third Year of My Engineering course for consistent Academic excellence and Representing Shivaji University at National Level Badminton Tournaments for 3 Years.'],
+        purpose:['Shivaji University granted me a Merit Scholarship for Academic Year 2015-2016, in the Third Year of My Engineering course for showcasing Consistent Academic Excellence and Representing Shivaji University at National Level Badminton Tournaments for consecutive 3 Years.'],
         image:"award3.png"
     }
 ];
