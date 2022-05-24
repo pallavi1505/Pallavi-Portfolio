@@ -35,7 +35,7 @@ export default function Award(props) {
             <div className='award-content-parent-conatiner'>
             <Carousel itemsToShow={1}>
               {AWARDS.map((award) =>(
-                <AwardItem name={award.name}/>
+                <AwardItem name={award.name} image={award.image} organization={award.organization} duration={award.duration} purpose={award.purpose}/>
               ))}
             </Carousel>
             </div>

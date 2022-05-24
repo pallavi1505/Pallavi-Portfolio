@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start ;
+    height: 100%;
 }
 
 .award-image-conatiner{
@@ -22,17 +23,90 @@
     flex-direction: column;
     justify-content: center;
     width: 45%;
+    height: 100%;
 }
 
 .award-content-conatiner{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 55%;
+    height: 100%;
+    margin-top: 2%;
 }
 
-@media only screen and (max-width:500px) {
+.award-image-parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.award-image-row{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.award-image{
+    height: 100%;
+}
+
+.award-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.link-color{
+    color: #F57F17;
+}
+
+.row1-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row1-text{
+    color: #F57F17;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.row2-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row2-left-text{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+
+.row2-right-text{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.row3-container{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    margin-top: 3%;
+}
+
+.row3-text{
+    color: aliceblue;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width:500px) {
     .award-content-conatiner{
         display: flex;
         flex-direction: column;

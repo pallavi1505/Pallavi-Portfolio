@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0% 2% 0% 2%;
+    padding: 2% 2% 0% 2%;
 }
 
+
 .award-content-parent-conatiner{
-    padding: 1%;
     width: 100%;
 }
