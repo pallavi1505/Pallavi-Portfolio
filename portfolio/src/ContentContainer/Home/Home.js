@@ -17,7 +17,7 @@ export default function Home(props) {
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInHandler);
 
     return (
-        <div className='home-container'>
+        <div className='home-container' id={props.id || ""}>
             <Header/>
             <div className='home-parent'>
                 <div className='home-details'>
