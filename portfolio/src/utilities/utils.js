@@ -64,11 +64,12 @@ export const GET_SCREEN_INDEX = (screen_name) =>
 
 export  const WORK_EXPERIENCE = [
     {
-        title:"Incoming Software Engineer Intern Summer 2022",
-        organization: "Salom Build",
+        title:"SDE Intern Summer 2022",
+        organization: "Slalom Build",
         duration:"Jun 2022 - Aug 2022",
-        work:[],
-
+        work:['-Working as a Full Stack Developer on “Slalom Cards” Platform using Angular, AWS Lambda and Dynamodb.',
+            '-Working on Search and Advanced Search Functionality Results to be shown with Pagination.',
+            '-Working with a dyanamic team of 4 people using Agile Methodology for Project Development.'],
     }
     ,
     {

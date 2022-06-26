@@ -70,8 +70,8 @@ export default function Home(props) {
                     </div>
 
                     <div className='home-options'>
-                        <a href='Pallavi_Resume.pdf' download="Pallavi Shirodkar Resume.pdf">
-                            <button className='btn highlighted-btn'>
+                        <a href='https://drive.google.com/file/d/1PDKP6Y9_gjQhsdmZVs6uMP6kqSviB1BM/view?usp=sharing' download="Pallavi Shirodkar Resume.pdf">
+                            <button className='btn highlighted-btn button-parent'>
                             {" "}
                             Download Resume {" "}
                             </button>
@@ -85,8 +85,10 @@ export default function Home(props) {
                     </div>
                 </div>
             </div>
+            <div className='image-parent'>
                 <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 250" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 128.71428571428572,184.75 257.42857142857144,169.5 367,154 C 476.57142857142856,138.5 567,122.75 672,139 C 777,155.25 896.5714285714287,203.5 1027,219 C 1157.4285714285713,234.5 1298.7142857142858,217.25 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ffffffff" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
             </div>
+        </div>
     )
 }
 

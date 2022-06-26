@@ -15,7 +15,13 @@
     flex-grow: 1;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: -3%;
+}
+
+.image-parent{
+}
+
+.button-parent{
+    width: max-content;
 }
 
 .highlighted-text{
