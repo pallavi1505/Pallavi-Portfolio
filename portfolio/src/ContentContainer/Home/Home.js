@@ -65,7 +65,7 @@ export default function Home(props) {
                         <p>3+ years of Professional Experience.<br/>
                         Graduate Student at UNC Charlotte. Graduate Teaching Assistant<br/>
                         Ex-Schlumberger, Pune, India.<br/>
-                        Incoming SDE Intern, Slalom Build, Charlotte, US.</p>
+                        SDE Intern, Slalom Build, Charlotte, US.</p>
                         </span>
                     </div>
 
