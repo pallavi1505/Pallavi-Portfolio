@@ -118,7 +118,7 @@ export  const EDUCATION = [
         duration:"Aug 2012 - May 2016",
         grade:"Cgpa: 3.6/4.0 (Source: WES)",
         courses:[],
-        downloadAvailable: 'Transcripts.pdf'
+        downloadAvailable: 'https://drive.google.com/file/d/1HJpxD4nKy45zxB-7awRGrN9J4j47l0yC/view?usp=sharing'
     }  
 ];
 
@@ -128,28 +128,28 @@ export const SKILLS = [
         items: [
             {
                 name:"Python",
-                image:"python"
+                image:"https://drive.google.com/uc?export=view&id=1ms1zmrOLP-sHuI2nck5WJqDsjrmhRIop"
             },
             {
                 name:"Java",
-                image:"java"
+                image:"https://drive.google.com/uc?export=view&id=1JJa6x5Ou7YiU4-uJ8D5MHFCWTvtgCeSd"
             },
             {
                 name:"JavaScript",
-                image:"javascript"
+                image:"https://drive.google.com/uc?export=view&id=13BdSU4rU_W-cR11xI1CznE7OIr0Fwgg6"
             },
             {
                 name:"TypeScript",
-                image:"typescript"
+                image:"https://drive.google.com/uc?export=view&id=1Q6IxZq9XJNQ7rzR3LSGeKtKds70yEOzx"
             },
             {
                 name:"C#",
-                image:"csharp"
+                image:"https://drive.google.com/uc?export=view&id=12CaLK8-GfltYWx0tDaKkPRYeP5tMTWSa"
             },
             
             {
                 name:"SQL",
-                image:"sql"
+                image:"https://drive.google.com/uc?export=view&id=1jdjaQXUEb-yGwEgcwqK7CykG-qx-64sS"
             }
         ]
     },   
@@ -158,23 +158,23 @@ export const SKILLS = [
         items: [
             {
                 name:"React",
-                image:"react"
+                image:"https://drive.google.com/uc?export=view&id=1ZEjU0RqHF2DyQnaNhbUL_tR23TNIMnbV"
             },
             {
                 name:"Angular",
-                image:"angular"
+                image:"https://drive.google.com/uc?export=view&id=18qyqzPZJ3CBj9aObtzRfgCFrU9HtyWuG"
             },
             {
                 name:"Node",
-                image:"node"
+                image:"https://drive.google.com/uc?export=view&id=1Ml_egz5fP09c6Wt1BQtmBHD2lUDAOUTW"
             },
             {
                 name:"HTML",
-                image:"html"
+                image:"https://drive.google.com/uc?export=view&id=1VY0I9YO1pOKHZrt_6u9kuiad3ZWiZTaL"
             },
             {
                 name:"CSS",
-                image:"css"
+                image:"https://drive.google.com/uc?export=view&id=1z_aXaHLO2vCvaRdPJsBc-j3LQJbqwlEz"
             },
         ]
     },
@@ -183,27 +183,27 @@ export const SKILLS = [
         items: [
             {
                 name:"Visual Studio",
-                image:"vs"
+                image:"https://drive.google.com/uc?export=view&id=1T1NsCJvIEU0ngi3v-j19RHfYswYgs3lC"
             },
             {
                 name:"Visual Studio Code",
-                image:"vsc"
+                image:"https://drive.google.com/uc?export=view&id=1VjtzBjjasaTQYdNMGk-w5KQVNWZiGgZ_"
             },
             {
                 name:"Xamarin",
-                image:"xamarin"
+                image:"https://drive.google.com/uc?export=view&id=1ZISwBZGYDpUgLDOW2eJdsoMKPCov1oXG"
             },
             {
                 name:"Xcode",
-                image:"xcode"
+                image:"https://drive.google.com/uc?export=view&id=1ulHm3rQoV2V4cajR4sAHV_1vTQNIWh8e"
             },
             {
                 name:"GitHub",
-                image:"github"
+                image:"https://drive.google.com/uc?export=view&id=1omH8jcWW9THvsyoAiHlxmIIAuDYEfUc5"
             },
             {
                 name:"Jupyter",
-                image:"jupyter"
+                image:"https://drive.google.com/uc?export=view&id=1IeCpyZEHVVIo99P3hNhWIwMMSAYKaP7a"
             },
         ]
     },    

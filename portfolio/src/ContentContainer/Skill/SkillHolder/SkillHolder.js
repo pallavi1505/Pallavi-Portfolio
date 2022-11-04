@@ -15,7 +15,7 @@ export default function SkillHolder(props) {
                 {
                     props.items.map((item)=>(
                         <div className='category-content-item'>
-                            <img className='item-image' src={`../images/${item.image}.svg`} 
+                            <img className='item-image' src={`${item.image}`} 
                             title={item.name}
                             ></img>
                             <div className='item-name'>{item.name}</div>
