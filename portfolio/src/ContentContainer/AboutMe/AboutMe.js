@@ -60,7 +60,7 @@ export default function (props) {
                             <div className='parent-container' style={{flexDirection:"column"}}>
                                 <div className='image3'>
                                 </div>
-                                <span className='about-info-text'>One of the hike trials @Catawba</span>
+                                <span className='about-info-text'>After a taxing hike @Looking Glass Rock!</span>
                             </div>
                         </div>
                     </div>  
