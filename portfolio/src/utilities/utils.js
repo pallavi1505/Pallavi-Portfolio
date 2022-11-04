@@ -64,6 +64,16 @@ export const GET_SCREEN_INDEX = (screen_name) =>
 
 export  const WORK_EXPERIENCE = [
     {
+        title:"Graduate Teaching Assistant",
+        organization: "University of North Carolina at Charlotte",
+        duration:"Aug 2022 - Present",
+        work:["-Subject: Software System Design and Implmentation at UNC Charlotte",
+        "-Assisted professor with revising course syllabus.",
+        "-Assisted professor with grading student's assignments.",
+        "-Solved students' doubts around class assignments.",
+        "-Helped in grading project solutions."],
+    },
+    {
         title:"SDE Intern Summer 2022",
         organization: "Slalom Build",
         duration:"Jun 2022 - Aug 2022",
@@ -92,7 +102,6 @@ export  const WORK_EXPERIENCE = [
             "-Migrated legacy web applications into mobile applications.",
             "-Engaged in Agile SCRUM Methodologies and actively participated in all phases of Software Development Life Cycle (SDLC) to build scalable, robust web and mobile applications."],
     }
-
 ];
 
 export  const EDUCATION = [
