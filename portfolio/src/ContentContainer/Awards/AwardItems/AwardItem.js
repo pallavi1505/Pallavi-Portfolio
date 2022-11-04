@@ -10,8 +10,8 @@ export default function AwardItem(props) {
             <div className='award-image-conatiner'>
                 <div className='award-image-parent-container'>
                     <div className='award-image-row'>
-                        <img className='award-image' src={`../images/${props.image}`}
-                        onClick={()=> window.open(`../images/${props.image}`)}
+                        <img className='award-image' src={`${props.image}`}
+                        onClick={()=> window.open(`${props.image}`)}
                         >
                         </img>
                     </div>
