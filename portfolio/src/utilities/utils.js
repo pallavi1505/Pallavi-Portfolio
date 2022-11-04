@@ -217,20 +217,20 @@ export  const AWARDS = [
         purpose:[
         'In Q3 of 2020, when "Work-From-Home" culture began I simultaneously worked on 3 live projects - "eClaims" in which I worked as a front-end developer - I created reusable templates in React, "MDM Wells" for integrating Google Map APIs - where I created reusable Components in Angular and in "eClaims" Mobile Application Developer working in Xamarin - integrating one required feature into an existing application. I also collaborated with the Backend and QA team. I was not only successfully able to work simultaneously on many frontlines but I also delivered my deliverables within the given timeframe that required minimum QA efforts.'
         ],
-        image:"award1.png"
+        image:"https://drive.google.com/uc?export=view&id=14OC2-S4tErciUigKi0F-389r8US8Pqk4"
     },
     {
         name:"Well Done Award",
         organization: "Schlumberger",
         duration:"Oct 2019 - Dec 2019",
         purpose:[`One of the valued products of Schlumberger's Digital Productivity Services Team are "eClaims" and "ApproveBuddy". I participated in eClaims's and ApproveBuddy's phases right from its genesis to its completion. I single handedly developed the Business logic of the applications along with their User Interfaces for the iOS in Xamarin. With no lead developer present at the given moment, I looked after both the applications' end-to-end development and collaborated with various teams.`,`I was recognized for my Leadership, Dedication and Collaboration efforts in the Projects`],
-        image:"award2.png"
+        image:"https://drive.google.com/uc?export=view&id=1kyga9NAL6QdadTxhRVdGJ0HkTLRchvjH"
     },
     {
         name:"Merit Scholarship",
         organization: "Shivaji University, India",
         duration:"Apr 2016 - Present",
         purpose:['Shivaji University granted me a Merit Scholarship for Academic Year 2015-2016, in the Third Year of My Engineering course for showcasing Consistent Academic Excellence and Representing Shivaji University at National Level Badminton Tournaments for consecutive 3 Years.'],
-        image:"award3.png"
+        image:"https://drive.google.com/uc?export=view&id=17r5bVzh-K-JiPtsENEiyckK1DHibWiKx"
     }
 ];
