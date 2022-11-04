@@ -70,7 +70,7 @@ export default function Home(props) {
                     </div>
 
                     <div className='home-options'>
-                        <a href='https://drive.google.com/file/d/1PDKP6Y9_gjQhsdmZVs6uMP6kqSviB1BM/view?usp=sharing' download="Pallavi Shirodkar Resume.pdf">
+                        <a href='https://drive.google.com/file/d/19Phd93JTEW97gX9wOQfCSphQq1MR-GXy/view?usp=sharing' download="Pallavi Shirodkar Resume.pdf">
                             <button className='btn highlighted-btn button-parent'>
                             {" "}
                             Download Resume {" "}
